@@ -17,7 +17,7 @@
             "id": 1,
             "project_name": "List Pagination and Filtering",
             "description": "Using the pagination technique to turn a long list of information into bit sized chunks",
-            "technologies": ["Javascript"],
+            "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://danielgibsonorchid.github.io/techdegree-project-02/",
             "github_link": "https://github.com/DanielGibsonOrchid/techdegree-project-02",
             "image_urls": [
@@ -31,7 +31,7 @@
             "id": 2,
             "project_name": "Interactive Form",
             "description": "An interactive registration form using JavaScript",
-            "technologies": ["Javascript"],
+            "technologies": ["Javascript", "HTML", "CSS", "jQuery"],
             "live_link": "https://danielgibsonorchid.github.io/techdegree-project-03/",
             "github_link": "https://github.com/DanielGibsonOrchid/techdegree-project-03",
             "image_urls": [
@@ -45,7 +45,7 @@
             "id": 3,
             "project_name": "OOP Game Show App",
             "description": "A browser-based, word guessing game using JavaScript and OOP (Object-oriented Programming)",
-            "technologies": ["Javascript"],
+            "technologies": ["Javascript", "HTML", "CSS", "jQuery"],
             "live_link": "https://danielgibsonorchid.github.io/techdegree-project-04/",
             "github_link": "https://github.com/DanielGibsonOrchid/techdegree-project-04",
             "image_urls": [
@@ -59,7 +59,7 @@
             "id": 4,
             "project_name": "Public API Requests",
             "description": "Using the Random User Generator API to grab information for 12 random 'employees' to create a directory",
-            "technologies": ["Javascript"],
+            "technologies": ["Javascript", "HTML", "CSS", "jQuery", "AJAX"],
             "live_link": "https://danielgibsonorchid.github.io/techdegree-project-05/",
             "github_link": "https://github.com/DanielGibsonOrchid/techdegree-project-05",
             "image_urls": [
