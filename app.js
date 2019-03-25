@@ -3,8 +3,7 @@
  * Require the necessary dependencies *
 ********************/
 const express = require('express');
-const data = require('./data.json');
-const projects = data.projects;
+const { projects } = require('./data.json');
 const path = require('path');
 
 /********************
@@ -26,7 +25,7 @@ app.use('/static', express.static('public'));
 ********************/
 // homepage
 app.get('/', (req, res) => {
-    res.render('index', { projects: data.projects });
+    res.render('index', { projects });
 });
 
 // about page
@@ -35,7 +34,7 @@ app.get('/about', (req, res) => {
 });
 
 // project pages
-data.projects.forEach((project) => {
+projects.forEach((project) => {
     app.get(`/project/${project.id}`, (req, res) => {
         res.render('project', {project});
     });
