@@ -1,4 +1,4 @@
-
+// Daniel Gibson's Project 6 - Static Node.js and Express Site
 /********************
  * Require the necessary dependencies *
 ********************/

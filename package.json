@@ -1,7 +1,7 @@
 {
   "name": "techdegree-project-06",
   "version": "1.0.0",
-  "description": "Portfolio site using Node.js and Express",
+  "description": "Static Node.js and Express Site",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/DanielGibsonOrchid/techdegree-project-06.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Gibson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DanielGibsonOrchid/techdegree-project-06/issues"
