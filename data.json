@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": "0",
+            "id": 0,
             "project_name": "A Random Quote Generator",
             "description": "An app that displays random famous quotes each time a button is clicked",
             "technologies": ["Javascript", "HTML", "CSS"],
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "id": "1",
+            "id": 1,
             "project_name": "List Pagination and Filtering",
             "description": "Using the pagination technique to turn a long list of information into bit sized chunks",
             "technologies": ["Javascript"],
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": 2,
             "project_name": "Interactive Form",
             "description": "An interactive registration form using JavaScript",
             "technologies": ["Javascript"],
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "id": "3",
+            "id": 3,
             "project_name": "OOP Game Show App",
             "description": "A browser-based, word guessing game using JavaScript and OOP (Object-oriented Programming)",
             "technologies": ["Javascript"],
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "id": "4",
+            "id": 4,
             "project_name": "Public API Requests",
             "description": "Using the Random User Generator API to grab information for 12 random 'employees' to create a directory",
             "technologies": ["Javascript"],

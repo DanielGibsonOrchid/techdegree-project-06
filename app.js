@@ -1,21 +1,32 @@
+
+/********************
+ * Require the necessary dependencies *
+********************/
 const express = require('express');
-const { projects } = require('./data.json');
+const data = require('./data.json');
+const projects = data.projects;
 const path = require('path');
 
-//Create the app
+/********************
+ * Create the app *
+********************/
 const app = express();
 
-//middleware
+/********************
+ * Middleware *
+********************/
 // set the view engine to pug
 app.set('view engine', 'pug');
 
 // route for static files
 app.use('/static', express.static('public'));
 
-// routes
+/********************
+ * Routes *
+********************/
 // homepage
 app.get('/', (req, res) => {
-    res.render('index', projects);
+    res.render('index', { projects: data.projects });
 });
 
 // about page
@@ -24,48 +35,33 @@ app.get('/about', (req, res) => {
 });
 
 // project pages
-projects.forEach((project) => {
+data.projects.forEach((project) => {
     app.get(`/project/${project.id}`, (req, res) => {
         res.render('project', {project});
     });
 });
-//redirect for /project to go to the first project
+
+// "/project" redirects to the first project
 app.get('/project', (req, res) => {
     res.redirect('/project/0');
 });
 
-// error handling
+/********************
+ * Error Handling *
+********************/
 app.use((req, res, next) => {
-    const err = new Error('Not Found');
+    const err = new Error('Sorry, this page was not found');
     err.status = 404;
+    console.error(`${err.status}: Page not found`);
     next(err);
 });
 
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
+    res.locals.error = err;
+    res.status(err.status);
     res.render('error');
 });
 
-app.listen(3000, () => {
-    console.log("The application is running on localhost:3000")
-});
-
-
-/*
-Add variables to require the necessary dependencies. You'll need to require:
-- Express
-- Your data.json file
-- Optionally - the path module which can be used when setting the absolute path in the express.static function.
-
-Set up your middleware:
-- set your “view engine” to “pug”
-- use a static route and the express.static method to serve the static files located in the public folder
-
-Set your routes. You'll need:
-- An "index" route (/) to render the "Home" page with the locals set to data.projects
-- An "about" route (/about) to render the "About" page
-- Dynamic "project" routes (/project or /projects) based on the id of the project that render
- a customized version of the Pug project template to show off each project. 
- Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
-
-*/
+// Run the app on localhost:3000
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`The application is running on Localhost:${port}`));
