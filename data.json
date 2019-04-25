@@ -82,6 +82,19 @@
                 "/static/img/spin-02-1200x550.jpg",
                 "/static/img/spin-03-1200x550.jpg"
             ]
+        },
+        {
+            "id": 6,
+            "project_name": "React Scoreboard",
+            "description": "A scoreboard app using React that can be used while playing boardgames.",
+            "technologies": ["React", "Javascript", "HTML", "CSS"],
+            "live_link": "https://daniel-react-scoreboard.herokuapp.com/",
+            "github_link": "https://github.com/DanielGibsonOrchid/scoreboard",
+            "image_urls": [
+                "/static/img/scoreboard-550x550.jpg", 
+                "/static/img/scoreboard-01-1200x550.jpg", 
+                "/static/img/score-board-02-1200x550.jpg"
+            ]
         }
     ]
 }
