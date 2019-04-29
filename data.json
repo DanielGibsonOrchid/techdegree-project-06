@@ -93,7 +93,21 @@
             "image_urls": [
                 "/static/img/scoreboard-550x550.jpg", 
                 "/static/img/scoreboard-01-1200x550.jpg", 
-                "/static/img/score-board-02-1200x550.jpg"
+                "/static/img/scoreboard-02-1200x550.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "project_name": "React App",
+            "description": "A simple app using React that can navigate through pages without reloading the page.",
+            "technologies": ["React", "Javascript", "HTML", "CSS"],
+            "live_link": "https://daniel-react-app.herokuapp.com/",
+            "github_link": "https://github.com/DanielGibsonOrchid/reactapp",
+            "image_urls": [
+                "/static/img/react-app-550x550.jpg", 
+                "/static/img/react-app-01-1200x550.jpg", 
+                "/static/img/react-app-02-1200x550.jpg",
+                "/static/img/react-app-02-1200x550.jpg"
             ]
         }
     ]
